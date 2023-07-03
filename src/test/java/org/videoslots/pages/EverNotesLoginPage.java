@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.videoslots.commonutls.CommonMethods;
 
 public class EverNotesLoginPage extends BasePage {
+	
 	CommonMethods commonMethods;
 
 	public EverNotesLoginPage(WebDriver driver) {
@@ -71,8 +72,5 @@ public class EverNotesLoginPage extends BasePage {
 		String text =  this.responseMessage.getText();
 		return text;
 	}
-	
-	
-	
 	
 }

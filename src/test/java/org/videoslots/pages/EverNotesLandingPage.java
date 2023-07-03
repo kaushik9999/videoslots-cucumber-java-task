@@ -3,9 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
 public class EverNotesLandingPage extends BasePage {
-
 
 	public EverNotesLandingPage(WebDriver driver) {
 		super(driver);
@@ -20,5 +18,4 @@ public class EverNotesLandingPage extends BasePage {
 		this.loginLink.click();
 		return this;
 	}
-
 }

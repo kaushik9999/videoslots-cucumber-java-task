@@ -10,4 +10,3 @@ NEGETIVE
 1. Verify with an array having no multiples of 4 or 6.
 2. Verify with an array of strings(run time error).
 3. Verify with float values.
-
