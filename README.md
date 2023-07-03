@@ -71,6 +71,6 @@
 
 Note : 
   1. Please find the test case flow in the written feature file, EverNote.feature.
-  2. If in case my credentials doesn't work for evernote, please update the creadentials under Properties/cofig.properties file. 
+  2. If in case my credentials doesn't work for evernote, please update the creadentials under Properties/config.properties file. 
      
    
