@@ -70,7 +70,7 @@
   3. Executables are prone to be corrupted, that's why if you face any erros with the executable, please follow either of the above steps guide.
 
 Note : 
-  1. Please find the test case flow in the written feature file, EverNote.feature.
+  1. Please find the test case flow in the written feature file, EverNotes.feature.
   2. If in case my credentials doesn't work for evernote, please update the creadentials under Properties/config.properties file. 
      
    
