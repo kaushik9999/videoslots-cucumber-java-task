@@ -1,7 +1,5 @@
 package org.videoslots.commonutls;
-
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +12,6 @@ public class CommonMethods {
 
 	public CommonMethods(WebDriver driver) {
 		this.driver = driver;
-
 	}
 
 	public void waitForElementCss(String selector, int timeOut) {
