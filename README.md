@@ -50,7 +50,7 @@
   1. Install java/maven/git and have the path set for all of them on your machine(mac/windows).
   2. Clone the repository.
   3. Navigate to the cloned directory.
-  4. Run command 'mvn clean compile test' or mvn clean test or  mvn clean verify
+  4. Run command 'mvn clean compile test' or 'mvn clean test' or  'mvn clean verify'
   5. All the test cases will be executed.
 
   From IDE:
