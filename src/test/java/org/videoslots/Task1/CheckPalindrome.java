@@ -4,7 +4,6 @@ public class CheckPalindrome {
 
 	public static boolean testPlindrome(String input) {
 		String reverseInput = "";
-
 		int length = input.length();
 
 		for (int i = (length - 1); i >= 0; --i) {
