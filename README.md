@@ -10,6 +10,8 @@
   2. Seperate text files are created for scenarios for each of the programs given in task1.
      
 # Task3 : Completed
+  I conducted ad-hoc testing for around 15-20 minutes on the videoslots website. The report for the bugs found during this testing can be found under ManualTestReport folder as a PDF document.
+  The website says my IP is blocked for further access(after 15-20 min), due to which I aborted my testing at this point and reported only the bugs which I came across in the few minutes of testing I conducted.
 
 # Task4 : Given Task
 
