@@ -62,6 +62,11 @@
   6. Convert the project into cucumber project if you encounter any issues(Right click on the project -> Configure -> Convert to Cucumber project).
   7. Open the feature file you wish to execute and run as cucumber feature. This will run all the test cases.
 
+  From RunTests.bat
+  1. An executable is created under this project for executing the tests.
+  2. Inorder for this file to work, please make sure java/maven are installed on your machine and the path is properly set or exported.
+  3. Executables are prone to be corrupted, that's why if you face any erros with the executable, please follow either of the above steps guide.
+
 Note : 
   1. Please find the test case flow in the written feature file, EverNote.feature.
   2. If in case my credentials doesn't work for evernote, please update the creadentials under Properties/cofig.properties file. 
