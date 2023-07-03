@@ -69,7 +69,6 @@ public class EverNotesHomePage extends BasePage {
 	
 	public WebElement getContent() {
 		this.switchToTextFrame();
-		//cm.waitForElementCss(textContent_css, 30); 
 		try {
 			Thread.sleep(5000);
 		}
