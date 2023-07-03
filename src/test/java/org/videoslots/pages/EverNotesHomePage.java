@@ -27,6 +27,7 @@ public class EverNotesHomePage extends BasePage {
 	final String loginSecurity_xapth = "//li[@aria-label='Login & security']/span/span[contains(text(),'Login')] ";
 	final String goToProfileLink_css = "#react-tabs-17 button > span";
 	final String userMenu_css = "a[id='user-menu-dropdown']";
+	final String logout_css = "a[href='/Logout.action']";
 
 	@FindBy(css = headerNotes_css)
 	private WebElement headerNotes;
@@ -59,8 +60,12 @@ public class EverNotesHomePage extends BasePage {
 	
 	@FindBy(css = goToProfileLink_css)
 	private WebElement goToProfileLink;
+	
 	@FindBy(css = userMenu_css)
 	private WebElement userMenu;
+	
+	@FindBy(css = logout_css)
+	private WebElement logout;
 	
 	public WebElement getContent() {
 		this.switchToTextFrame();
@@ -141,11 +146,19 @@ public EverNotesHomePage clickProfileLink() {
 		return this;
 	}
 
+public EverNotesHomePage logout() {
+	
+	this.logout.click();
+	return this;
+}
+
 public EverNotesHomePage clickUserMenu() {
 	String originalWin = driver.getWindowHandle();
 	cm.switchToChildWindow(originalWin);
 	this.userMenu.click();
-	driver.findElement(By.cssSelector("a[href='/Logout.action']")).click();
+	this.logout();
+	driver.close();
+	cm.switchToMainWindow(originalWin);
 	return this;
 }
 
