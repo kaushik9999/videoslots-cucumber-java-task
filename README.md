@@ -50,7 +50,7 @@
   1. Install java/maven/git and have the path set for all of them on your machine(mac/windows).
   2. Clone the repository.
   3. Navigate to the cloned directory.
-  4. Run command 'mvn clean compile test' or mvn clean test or  mvn clean verify
+  4. Run command 'mvn clean compile test' or 'mvn clean test' or  'mvn clean verify'
   5. All the test cases will be executed.
 
   From IDE:
@@ -61,6 +61,11 @@
   5. If you wish to run with the feature file, first install the cucumber plug in from the eclipse market place. 
   6. Convert the project into cucumber project if you encounter any issues(Right click on the project -> Configure -> Convert to Cucumber project).
   7. Open the feature file you wish to execute and run as cucumber feature. This will run all the test cases.
+
+  From RunTests.bat
+  1. An executable is created under this project for executing the tests.
+  2. Inorder for this file to work, please make sure java/maven are installed on your machine and the path is properly set or exported.
+  3. Executables are prone to be corrupted, that's why if you face any erros with the executable, please follow either of the above steps guide.
 
 Note : 
   1. Please find the test case flow in the written feature file, EverNote.feature.
