@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		// path of feature file
-		features = "src/test/resources/Features/EverNotes.feature", glue = "/org/videoslots/stepDefinitions",plugin = { "json:target/cucumber.json" },
+		features = "src/test/resources/Features/EverNotes.feature", glue = "/org/videoslots/stepDefinitions",plugin = {"json:target/cucumber.json","html:target/cucumber.html"},
 		monochrome = true
 )
 public class TestRunner {

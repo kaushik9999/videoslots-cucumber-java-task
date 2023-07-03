@@ -1,4 +1,5 @@
 Feature: EverNotes Feature
+  
      Background:
          Given User is on the login page
   
@@ -14,14 +15,14 @@ Feature: EverNotes Feature
   		 When User clicks on signin
        Then User can login and see the title
 
-  	Scenario: User wants to write a note
-	    Given user is logged in
-	    When user clicks on new button
-	    And user choose notes option
-	    Then user should be able to take notes and save it
-	    Then user should logout
+  Scenario: User wants to write a note
+    Given user is logged in
+    When user clicks on new button
+    And user choose notes option
+    Then user should be able to take notes and save it
+    Then user should logout
 
-	  Scenario: User wants to retrive the saved note
-	    Given user is logged in
-	    When user clicks on note which is already saved
-	    Then user should be able to open the notes
+  Scenario: User wants to retrive the saved note
+    Given user is logged in
+    When user clicks on note which is already saved
+    Then user should be able to open the notes

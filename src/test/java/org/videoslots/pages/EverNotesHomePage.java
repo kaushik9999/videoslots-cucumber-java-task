@@ -1,4 +1,5 @@
 package org.videoslots.pages;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +25,8 @@ public class EverNotesHomePage extends BasePage {
 	final String textContent_css = "en-note[id='en-note'] div";
 	final String settings_css = "button[aria-label='Settings'] svg";
 	final String loginSecurity_xapth = "//li[@aria-label='Login & security']/span/span[contains(text(),'Login')] ";
+	final String goToProfileLink_css = "#react-tabs-17 button > span";
+	final String userMenu_css = "a[id='user-menu-dropdown']";
 
 	@FindBy(css = headerNotes_css)
 	private WebElement headerNotes;
@@ -53,6 +56,11 @@ public class EverNotesHomePage extends BasePage {
 	
 	@FindBy(xpath =loginSecurity_xapth )
 	private WebElement loginSecurity;
+	
+	@FindBy(css = goToProfileLink_css)
+	private WebElement goToProfileLink;
+	@FindBy(css = userMenu_css)
+	private WebElement userMenu;
 	
 	public WebElement getContent() {
 		this.switchToTextFrame();
@@ -126,5 +134,19 @@ public class EverNotesHomePage extends BasePage {
 		this.loginSecurity.click();
 		return this;
 	}
+	
+public EverNotesHomePage clickProfileLink() {
+		
+		this.goToProfileLink.click();
+		return this;
+	}
+
+public EverNotesHomePage clickUserMenu() {
+	String originalWin = driver.getWindowHandle();
+	cm.switchToChildWindow(originalWin);
+	this.userMenu.click();
+	driver.findElement(By.cssSelector("a[href='/Logout.action']")).click();
+	return this;
+}
 
 }

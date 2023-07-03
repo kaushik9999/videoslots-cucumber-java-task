@@ -7,7 +7,7 @@
 	<artifactId>VIdeoSlotsAssignment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>VIdeoSlotsAssignment</name>
+	<name>videoslots-cucumber-java-task</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -106,7 +106,7 @@
 				<plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.7.0</version>
+                <version>5.7.5</version>
                 <executions>
                     <execution>
                         <id>execution</id>
@@ -115,9 +115,9 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>videoslots-cucumber-java</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                            <projectName>videoslots-cucumber-java-task</projectName>
+                            <outputDirectory>${project.basedir}/target/cucumber-report-html</outputDirectory>
+                            <cucumberOutput>${project.basedir}/target/cucumber.json</cucumberOutput>
                         </configuration>
                     </execution>
                 </executions>

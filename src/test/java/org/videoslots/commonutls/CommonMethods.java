@@ -32,4 +32,15 @@ public class CommonMethods {
 		actions.moveToElement(element);
 	}
 
+	public void switchToChildWindow(String originalWindow) {
+		for (String windowHandle : driver.getWindowHandles()) {
+			if (!originalWindow.contentEquals(windowHandle)) {
+				driver.switchTo().window(windowHandle);
+				break;
+			}
+		}
+	}
+	public void switchToMainWindow(String originalWindow) {
+		driver.switchTo().window(originalWindow);
+	}
 }

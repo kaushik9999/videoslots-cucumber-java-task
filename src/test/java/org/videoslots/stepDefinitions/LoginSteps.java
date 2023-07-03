@@ -120,7 +120,7 @@ public class LoginSteps {
 	}
 	@Then("user should logout")
 	public void user_should_logout() {
-	    homePage.clickSettings().clickLoginAndSecurity();
+	    homePage.clickSettings().clickLoginAndSecurity().clickProfileLink().clickUserMenu();
 	}
 
 	
