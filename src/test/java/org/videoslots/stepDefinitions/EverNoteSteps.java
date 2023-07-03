@@ -16,7 +16,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LoginSteps {
+public class EverNoteSteps {
 
 	WebDriver driver;
 	BasePage basePage;
