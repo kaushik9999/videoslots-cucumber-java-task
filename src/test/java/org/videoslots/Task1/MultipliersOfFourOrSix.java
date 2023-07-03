@@ -1,5 +1,4 @@
 package org.videoslots.Task1;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
