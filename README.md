@@ -1,24 +1,24 @@
 # videoslots-cucumber-java-task
 
-# Task1 : COMPLETED
+# Task1 : Completed
 
  1. Task1 related .java files are under src/test org.videoslots.Task1 package.
 
-# Task2 : COMPLETED
+# Task2 : Completed
 
   1. Task2 realated files under TestScenarios folder in the project root directory.
   2. Seperate text files are created for scenarios for each of the programs given in task1.
      
-# Task3 : COMPLETED
+# Task3 : Completed
 
-# Task4 : GIVEN TASK
+# Task4 : Given Task
 
   1. Create an SQL Query which retrieves the id, name and surname of all registered users under country Malta.
   2. Create an SQL Query which retrieves the id, name, surname of all registered users that are NOT registered under country Portugal and France.
   3. Create an SQL Query which retrieves the id, name and surname of all registered users which are still active.
   4. Create an SQL Query which retrieves the name, surname and emails of all registered users which requires a reset password.
 
-# Task4 : COMPLETED TASK
+# Task4 : Completed Task
 
   Below are the queries written for task 4
   
@@ -27,7 +27,7 @@
   3. SELECT id, name, surname FROM users u INNER JOIN users_creds uc ON u.id =uc.id;
   4. SELECT id, name, surname FROM users u INNER JOIN users_creds uc ON u.id =uc.id WHERE uc.required_rest_password=1;
 
-# Task5 : GIVEN TASK
+# Task5 : Given Task
 
   Tests to be covered:
   1. Unsuccessful login using email
@@ -35,8 +35,35 @@
   3. Login and write a note followed by a logout
   4. Login again and make sure you open the note create in step 3
 
-# Task5 : COMPLETED TASK
+# Task5 : Completed Task
   Created a BDD Cucumber framework in java. Covered all the given tests.
   
   Framework explanation:
-  1. 
+  1. All the feature files are under Featues folder inside src/test/resources.
+  2. All the stepDefinitions are under org.videoslots.stepDefinitions package.
+  3. All the pages/pageObject classes are under org.videoslots.pages package.
+  4. All the common methods and framework utils are under org.videoslots.commonutils package.
+
+  Run Instructions:
+  
+  From Command Line:
+  1. Install java/maven/git and have the path set for all of them on your machine(mac/windows).
+  2. Clone the repository.
+  3. Navigate to the cloned directory.
+  4. Run command 'mvn clean compile test' or mvn clean test or  mvn clean verify
+  5. All the test cases will be executed.
+
+  From IDE:
+  1. Clone the project.
+  2. Import the project as maven project into any of the IDE(for ex: Eclipse).
+  3. Right click on the project and run as maven clean, then maven install.
+  4. Run maven test to execute tests with the help of maven.
+  5. If you wish to run with the feature file, first install the cucumber plug in from the eclipse market place. 
+  6. Convert the project into cucumber project if you encounter any issues(Right click on the project -> Configure -> Convert to Cucumber project).
+  7. Open the feature file you wish to execute and run as cucumber feature. This will run all the test cases.
+
+Note : 
+  1. Please find the test case flow in the written feature file, EverNote.feature.
+  2. If in case my credentials doesn't work for evernote, please update the creadentials under Properties/cofig.properties file. 
+     
+   
