@@ -1,0 +1,12 @@
+POSITIVE:
+
+1. Verify with valid palindrome upper case. ex: NANAN
+2. Verify with valid palindrome lower case. ex: nanan
+3. Verify with a combination of upper and lowercases. NAnan
+
+NEGETIVE:
+
+1. Verify with invalid palindrome.
+2. Verify with an integer input.
+3. Verify with space in the string in betweeen characters. ex: NA NAN 
+4. Verify with an empty string. 

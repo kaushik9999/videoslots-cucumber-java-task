@@ -1,0 +1,13 @@
+POSITIVE
+
+1. Verify if multiples of 4 are returned with valid input.
+2. Verify if multiples of 6 are returned with valid input array.
+3. Verify if multiples of 4 and 6 are retured for an input array with both multiples of 4 and 6.
+4. Verify with input array having negative values of 4 and 6 multiples. 
+
+NEGETIVE 
+
+1. Verify with an array having no multiples of 4 or 6.
+2. Verify with an array of strings(run time error).
+3. Verify with float values.
+
