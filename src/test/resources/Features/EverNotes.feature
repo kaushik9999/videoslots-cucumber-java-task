@@ -1,19 +1,17 @@
 Feature: EverNotes Feature
+
+  Background:
+  	Given User is on the login page
   
-     Background:
-         Given User is on the login page
-  
-     Scenario: Login with in-valid credentials
-  
-       When User enteres unregistered email and clicks continue
-       Then User should see an error message "There is no account for the username or email you entered."
+  Scenario: Login with in-valid credentials
+    When User enteres unregistered email and clicks continue
+    Then User should see an error message "There is no account for the username or email you entered."
        
-   	 Scenario: Login with valid credentials
-  
-       When User enteres registered email and clicks continue
-  		 And 	User enteres valid password
-  		 When User clicks on signin
-       Then User can login and see the title
+  Scenario: Login with valid credentials
+    When User enteres registered email and clicks continue
+    And  User enteres valid password
+    When User clicks on signin
+    Then User can login and see the title
 
   Scenario: User wants to write a note
     Given user is logged in
